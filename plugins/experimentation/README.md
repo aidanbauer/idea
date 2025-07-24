@@ -17,8 +17,6 @@ The AEM Experimentation plugin supports:
 
 ## Installation
 
-:warning: If you are instrumenting a new site, please switch to [v2](https://github.com/adobe/aem-experimentation/tree/v2).
-
 Add the plugin to your AEM project by running:
 ```sh
 git subtree add --squash --prefix plugins/experimentation git@github.com:adobe/aem-experimentation.git main
@@ -122,7 +120,7 @@ Typically, you'd know you don't have the plugin system if you don't see a refere
     ```
     This is mostly used for the authoring overlay, and as such isn't essential to the page rendering, so having it at the end of the lazy phase is good enough.
 
-### On top of the plugin system (deprecated)
+### On top of the plugin system
 
 The easiest way to add the plugin is if your project is set up with the plugin system extension in the boilerplate.
 You'll know you have it if `window.hlx.plugins` is defined on your page.
